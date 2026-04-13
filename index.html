@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anoop Ashokan</title>
+  <meta name="description"
+    content="Anoop Ashokan — Software Architect and Cybersecurity Expert. Specializing in building secure web applications, penetration testing, and scalable system design.">
+  <meta name="keywords" content="Anoop Ashokan, Cybersecurity, Ethical Hacker, Web Developer, Portfolio, BCA Student">
+  <meta name="author" content="Anoop Ashokan">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/cursor.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader-particles" id="loaderParticles"></div>
+    <div class="loader-name" id="loaderName">
+      <!-- Letters injected by JS -->
+    </div>
+    <p class="loader-tagline">Cybersecurity · Development · Innovation</p>
+    <div class="loader-progress">
+      <div class="loader-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav-container" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">ANOOP ASHOKAN<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#resume" class="nav-link" data-nav>Resume</a></li>
+
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero-section section" id="hero">
+    <div class="hero-bg-gradient"></div>
+    <canvas class="hero-particles" id="heroCanvas"></canvas>
+
+    <!-- Floating decorations -->
+    <div class="hero-bg-text">ANOOP</div>
+    <div class="floating-element float-circle float-1"></div>
+    <div class="floating-element float-circle float-2"></div>
+
+    <div class="hero-content">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <p class="hero-greeting" id="heroGreeting">Hello, I'm</p>
+        <h1 class="hero-name" id="heroName">Anoop Ashokan</h1>
+        <p class="hero-title" id="heroTitle">Cybersecurity Enthusiast & Developer</p>
+        <p class="hero-description" id="heroDesc">
+          Final-year BCA student passionate about ethical hacking, penetration testing, and building secure web
+          applications. Turning curiosity into code, one vulnerability at a time.
+        </p>
+        <div class="hero-cta-group" id="heroCta">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-rocket"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fas fa-paper-plane"></i>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: 3D Card -->
+      <div class="hero-image-wrapper">
+        <div class="hero-3d-card" id="hero3dCard">
+          <div class="card-glow"></div>
+          <div class="card-border">
+            <img src="./assets/images/photo-hero.jpg" alt="Anoop Ashokan" class="card-image">
+            <div class="card-shine" id="cardShine"></div>
+          </div>
+
+
+          <div class="badge-status">
+            <span class="status-dot"></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">A Glimpse Into My Mind</p>
+        <h2 class="section-title">The Foundation</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+
+
+        <!-- Text Side -->
+        <div class="about-text-content reveal">
+          <h3>Architecting Secure & Scalable Software</h3>
+          <p>
+            I'm Anoop Ashokan, a passionate developer and cybersecurity enthusiast currently pursuing a Bachelor of
+            Computer Applications (BCA)
+            at MG University. I bridge the gap between building high-performance software and ensuring its absolute
+            security.
+          </p>
+          <p>
+            When it comes to <strong>Software Building</strong>, I don't just write code; I architect solutions.
+            My approach involves careful system design, efficient database modeling, and a "security-first" development
+            mindset.
+            I enjoy the process of turning complex problems into clean, modular, and maintainable software that delivers
+            a premium user experience.
+          </p>
+          <p>
+            I have extensive experience in full-stack web development — building robust, database-driven healthcare
+            management systems and emergency coordination platforms using PHP, MySQL, and modern JavaScript frameworks.
+          </p>
+          <p>
+            Simultaneously, I sharpen my skills in ethical hacking daily. By understanding how hackers think,
+            I am able to build more resilient software from the ground up, protecting users and data through proactive
+            defense.
+          </p>
+
+          <!-- Counters -->
+          <div class="counters-grid">
+            <div class="counter-item reveal">
+              <div class="counter-number">
+                <span class="counter" data-target="5">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="counter-label">Projects Built</div>
+            </div>
+            <div class="counter-item reveal">
+              <div class="counter-number">
+                <span class="counter" data-target="12">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="counter-label">Technologies</div>
+            </div>
+            <div class="counter-item reveal">
+              <div class="counter-number">
+
+              </div>
+              <div class="counter-label">Hours of Learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating elements -->
+    <div class="floating-element float-circle float-3"></div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Expertise</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Programming -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💻</div>
+            <h3 class="skill-category-title">Programming</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+          <div class="skill-bars" style="margin-top: 1.2rem;">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Python</span>
+                <span class="skill-bar-percent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">PHP / MySQL</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🌐</div>
+            <h3 class="skill-category-title">Web Development</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git</span>
+          </div>
+          <div class="skill-bars" style="margin-top: 1.2rem;">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">HTML / CSS</span>
+                <span class="skill-bar-percent">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">JavaScript</span>
+                <span class="skill-bar-percent">70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🔐</div>
+            <h3 class="skill-category-title">Cybersecurity</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Ethical Hacking</span>
+            <span class="skill-tag">Penetration Testing</span>
+            <span class="skill-tag">Web App Security</span>
+            <span class="skill-tag">OSINT</span>
+            <span class="skill-tag">Vulnerability Scanning</span>
+            <span class="skill-tag">Risk Assessment</span>
+            <span class="skill-tag">CTF Challenges</span>
+            <span class="skill-tag">SOC Basics</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🛠️</div>
+            <h3 class="skill-category-title">Tools & Platforms</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Hack The Box</span>
+            <span class="skill-tag">TryHackMe</span>
+            <span class="skill-tag">PortSwigger Labs</span>
+            <span class="skill-tag">Burp Suite</span>
+            <span class="skill-tag">Nmap</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Engineering & Security</p>
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: MediConnect -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-glow-bg"></div>
+          <div class="project-image-wrapper">
+            <img src="./assets/images/project-mediconnect.png" alt="MediConnect Platform" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Major Project</p>
+            <h3 class="project-name">MediConnect</h3>
+            <p class="project-description">
+              Emergency Health Coordination Platform integrating ambulance services, hospital resources, blood donation
+              matching, elderly SOS alerts, and volunteer response.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/securematrix" target="_blank" class="project-link-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Health Monitoring System -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-glow-bg"></div>
+          <div class="project-image-wrapper">
+            <img src="./assets/images/project-health.png" alt="ASHA Health Monitoring System" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Healthcare</p>
+            <h3 class="project-name">ASHA Health Monitor</h3>
+            <p class="project-description">
+              Multi-user digital health monitoring system for ASHA workers with patient registration, pregnancy
+              tracking, child health & vaccination records, and automated reminders.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/securematrix" target="_blank" class="project-link-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Security Tools -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-glow-bg"></div>
+          <div class="project-image-wrapper">
+            <img src="./assets/images/project-security.png" alt="Security Operations Dashboard" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Cybersecurity</p>
+            <h3 class="project-name">Security Lab Projects</h3>
+            <p class="project-description">
+              Hands-on cybersecurity practice through Hack The Box, TryHackMe, and PortSwigger Labs — covering
+              vulnerability assessment, web app attacks, and OSINT.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Burp Suite</span>
+              <span class="tech-badge">Nmap</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Linux</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/securematrix" target="_blank" class="project-link-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Web Tools -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-glow-bg"></div>
+          <div class="project-image-wrapper">
+            <img src="./assets/images/project-webtools.png" alt="Web Development Tools" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Web Development</p>
+            <h3 class="project-name">Web Dev Mini Projects</h3>
+            <p class="project-description">
+              Collection of interactive web applications including a Stopwatch, Password Generator, Calculator, and
+              Digital Clock — built with vanilla JavaScript.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://securematrix.github.io/simple-StopWatch/" target="_blank" class="project-link-btn">
+                <i class="fas fa-external-link-alt"></i> Stopwatch
+              </a>
+              <a href="https://securematrix.github.io/password-Generator/" target="_blank" class="project-link-btn">
+                <i class="fas fa-external-link-alt"></i> Password Gen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Education & Experience</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2026 (Ongoing)</span>
+            <h4 class="timeline-title">Bachelor of Computer Applications (BCA)</h4>
+            <p class="timeline-subtitle">MG University — Cochin Arts and Science College, Ernakulam</p>
+            <p class="timeline-description">
+              Strong foundation in programming, software development, and database management.
+              Focus on cybersecurity, networking, and building full-stack web applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h4 class="timeline-title">Higher Secondary Education (Computer Science)</h4>
+            <p class="timeline-subtitle">Pope Pius XI HS School, Kerala — 70%</p>
+            <p class="timeline-description">
+              Focus on C Programming, Networking, Physics. Built foundational understanding of computer science
+              principles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2012 — 2021</span>
+            <h4 class="timeline-title">Secondary School Education</h4>
+            <p class="timeline-subtitle">Cherupushpa Betheny Senior Secondary School, Kerala — 90%+</p>
+            <p class="timeline-description">
+              Developed strong analytical and problem-solving skills. Achieved academic excellence with 90%+ marks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: Certifications -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ongoing</span>
+            <h4 class="timeline-title">Cybersecurity Certifications & Training</h4>
+            <p class="timeline-subtitle">Hack The Box · TryHackMe · PortSwigger · The Forage</p>
+            <p class="timeline-description">
+              Industry exposure in risk management, network security, and cybersecurity operations through virtual
+              experience programs and hands-on labs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Resume Button -->
+      <div class="resume-download reveal">
+        <a href="#contact" class="btn-primary">
+          <i class="fas fa-download"></i>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Reach Out</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Side -->
+        <div class="contact-info-side reveal-left">
+          <h3>Let's build something amazing together</h3>
+          <p>
+            Whether you're into cybersecurity, tech innovation, or collaborative learning — I'd love to hear from you.
+            Let's connect and explore opportunities together!
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="detail-label">Email</span>
+                <a href="mailto:ashokananoop68@gmail.com" class="detail-value">ashokananoop68@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="detail-label">Phone</span>
+                <span class="detail-value">+91 7909 144 601</span>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Mavelikara, Alappuzha, Kerala, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-row">
+            <a href="https://www.linkedin.com/in/anoopashokan" target="_blank" class="social-icon-link"
+              aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/securematrix" target="_blank" class="social-icon-link" aria-label="GitHub"
+              title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/_anoop__._" target="_blank" class="social-icon-link"
+              aria-label="Instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/917909144601" target="_blank" class="social-icon-link" aria-label="WhatsApp"
+              title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:ashokananoop68@gmail.com" class="social-icon-link" aria-label="Email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form-container reveal-right">
+          <h3>Send me a message</h3>
+          <form action="https://formsubmit.co/anoopashokan61@gmail.com" method="POST" id="contactForm">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://securematrix.github.io/anoop-portfolio/thank-you.html">
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="fullname" class="form-input" placeholder="Full Name" required id="inputName"
+                  aria-label="Full Name">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-input" placeholder="Email Address" required id="inputEmail"
+                  aria-label="Email Address">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-input" placeholder="Subject" id="inputSubject"
+                aria-label="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-input" placeholder="Your Message" required id="inputMessage"
+                aria-label="Your Message"></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p class="footer-text">
+      © 2026 <a href="#hero">Anoop Ashokan</a>. Crafted with purpose & code.
+    </p>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="./assets/js/cursor.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

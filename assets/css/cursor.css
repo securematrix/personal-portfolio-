@@ -1,0 +1,77 @@
+/* ============================================= */
+/*  LUXURY GLOW MOUSE CURSOR — MODERN & SMOOTH   */
+/* ============================================= */
+
+/* Hide default cursor */
+body {
+  cursor: none !important;
+}
+
+/* Ensure all interactive elements don't show the default pointer */
+a, button, input, textarea, select, [role="button"] {
+  cursor: none !important;
+}
+
+/* Cursor Dot — Fast follower */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--highlight);
+  border-radius: 50%;
+  z-index: 100000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 0 10px var(--highlight);
+}
+
+/* Cursor Outline — Smooth delayed follower (Lerp) */
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(133, 79, 108, 0.5); /* Semi-transparent highlight */
+  border-radius: 50%;
+  z-index: 99999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
+              height 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
+              border-color 0.4s ease,
+              background-color 0.4s ease;
+}
+
+/* Hover States — Applied via JS */
+body.is-hovering .cursor-dot {
+  width: 4px;
+  height: 4px;
+  opacity: 0.5;
+}
+
+body.is-hovering .cursor-outline {
+  width: 65px;
+  height: 65px;
+  border-color: var(--highlight);
+  background-color: rgba(133, 79, 108, 0.1); /* Subtle glow fill */
+}
+
+/* Click Animation State */
+body.is-clicking .cursor-outline {
+  transform: translate(-50%, -50%) scale(0.85);
+  background-color: rgba(133, 79, 108, 0.2);
+}
+
+/* Hide on Mobile */
+@media (max-width: 1024px) {
+  body {
+    cursor: auto !important;
+  }
+  .cursor-dot, .cursor-outline {
+    display: none;
+  }
+}

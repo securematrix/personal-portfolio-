@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Anoop Ashokan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f0f0f;
+      --secondary: #1a1a1a;
+      --accent: #FFD700;
+      --text: #f0f0f0;
+      --text-secondary: #b0b0b0;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--primary);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 600px;
+      padding: 3rem;
+      background-color: var(--secondary);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 215, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    
+    p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background-color: transparent;
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid var(--accent);
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: rgba(255, 215, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .icon-circle {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 2;
+    }
+    
+    .icon-check {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg class="icon" viewBox="0 0 24 24">
+      <circle class="icon-circle" cx="12" cy="12" r="10" />
+      <path class="icon-check" d="M8 12L11 15L16 9" />
+    </svg>
+    <h1>Message Received</h1>
+    <p>Thank you for reaching out. I've received your message and will respond to you as soon as possible.</p>
+    <a href="index.html" class="btn">Return to Portfolio</a>
+  </div>
+</body>
+</html>
