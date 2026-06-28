@@ -147,7 +147,7 @@
       { el: document.getElementById('heroTitle'), delay: 400 },
       { el: document.getElementById('heroDesc'), delay: 600 },
       { el: document.getElementById('heroCta'), delay: 800 },
-      { el: document.getElementById('hero3dCard'), delay: 400 },
+      { el: document.querySelector('.subject-image'), delay: 400 },
     ];
 
     elements.forEach(({ el, delay }) => {
@@ -402,8 +402,6 @@
 
   skillBars.forEach(bar => skillBarObserver.observe(bar));
 
-
-
   // ===========================
   // 12. PARALLAX SCROLLING
   // ===========================
@@ -450,10 +448,9 @@
   const heroTitle = document.getElementById('heroTitle');
   if (heroTitle) {
     const titles = [
-      'Software Architect & Security Expert',
-      'Secure Software Engineer',
-      'Penetration Tester & Full-Stack Developer',
-      'Cybersecurity Specialist'
+      'Software Architect',
+      'Cybersecurity Enthusiast',
+      'Full-Stack Developer'
     ];
     let titleIndex = 0;
     let charIndex = 0;
