@@ -24,6 +24,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- Devicon -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/cursor.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -77,15 +80,21 @@
     <div class="floating-element float-circle float-1"></div>
     <div class="floating-element float-circle float-2"></div>
 
+    <div class="shadow-overlay"></div>
+    <div class="shadow-overlay-2"></div>
+    <div class="image-wrapper">
+      <img src="./assets/images/anoop-photo.jpg" alt="Anoop Ashokan" class="subject-image">
+    </div>
+
     <div class="hero-content">
       <!-- Left: Text -->
       <div class="hero-text">
         <p class="hero-greeting" id="heroGreeting">Hello, I'm</p>
         <h1 class="hero-name" id="heroName">Anoop Ashokan</h1>
-        <p class="hero-title" id="heroTitle">Cybersecurity Enthusiast & Developer</p>
+        <p class="hero-title" id="heroTitle">Software Architect</p>
         <p class="hero-description" id="heroDesc">
-          Final-year BCA student passionate about ethical hacking, penetration testing, and building secure web
-          applications. Turning curiosity into code, one vulnerability at a time.
+          BCA graduate passionate about software development and creating modern web applications.
+           Alongside development, I actively explore cybersecurity to build secure, scalable, and reliable software solutions.
         </p>
         <div class="hero-cta-group" id="heroCta">
           <a href="#projects" class="btn-primary">
@@ -98,24 +107,6 @@
           </a>
         </div>
       </div>
-
-      <!-- Right: 3D Card -->
-      <div class="hero-image-wrapper">
-        <div class="hero-3d-card" id="hero3dCard">
-          <div class="card-glow"></div>
-          <div class="card-border">
-            <img src="./assets/images/photo-hero.jpg" alt="Anoop Ashokan" class="card-image">
-            <div class="card-shine" id="cardShine"></div>
-          </div>
-
-
-          <div class="badge-status">
-            <span class="status-dot"></span>
-
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
 
     <!-- Scroll Indicator -->
@@ -127,192 +118,324 @@
     </div>
   </section>
 
-  <!-- ========== ABOUT SECTION ========== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">A Glimpse Into My Mind</p>
-        <h2 class="section-title">The Foundation</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="about-grid">
-
-
-        <!-- Text Side -->
-        <div class="about-text-content reveal">
-          <h3>Architecting Secure & Scalable Software</h3>
-          <p>
-            I'm Anoop Ashokan, a passionate developer and cybersecurity enthusiast currently pursuing a Bachelor of
-            Computer Applications (BCA)
-            at MG University. I bridge the gap between building high-performance software and ensuring its absolute
-            security.
-          </p>
-          <p>
-            When it comes to <strong>Software Building</strong>, I don't just write code; I architect solutions.
-            My approach involves careful system design, efficient database modeling, and a "security-first" development
-            mindset.
-            I enjoy the process of turning complex problems into clean, modular, and maintainable software that delivers
-            a premium user experience.
-          </p>
-          <p>
-            I have extensive experience in full-stack web development — building robust, database-driven healthcare
-            management systems and emergency coordination platforms using PHP, MySQL, and modern JavaScript frameworks.
-          </p>
-          <p>
-            Simultaneously, I sharpen my skills in ethical hacking daily. By understanding how hackers think,
-            I am able to build more resilient software from the ground up, protecting users and data through proactive
-            defense.
-          </p>
-
-          <!-- Counters -->
-          <div class="counters-grid">
-            <div class="counter-item reveal">
-              <div class="counter-number">
-                <span class="counter" data-target="5">0</span><span class="counter-suffix">+</span>
-              </div>
-              <div class="counter-label">Projects Built</div>
-            </div>
-            <div class="counter-item reveal">
-              <div class="counter-number">
-                <span class="counter" data-target="12">0</span><span class="counter-suffix">+</span>
-              </div>
-              <div class="counter-label">Technologies</div>
-            </div>
-            <div class="counter-item reveal">
-              <div class="counter-number">
-
-              </div>
-              <div class="counter-label">Hours of Learning</div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- ========== ABOUT SECTION ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Who I Am</p>
+      <h2 class="section-title">The Foundation</h2>
+      <div class="section-divider"></div>
     </div>
 
-    <!-- Floating elements -->
-    <div class="floating-element float-circle float-3"></div>
-  </section>
+    <div class="about-grid">
+
+      <!-- Text Side -->
+      <div class="about-text-content reveal">
+
+        <h3>Building Secure Software That Solves Real Problems</h3>
+
+        <p>
+          I'm <strong>Anoop Ashokan</strong>, a Bachelor of Computer Applications (BCA) graduate with a strong
+          passion for software development and cybersecurity. I enjoy transforming ideas into modern,
+          scalable, and reliable applications while following clean architecture and industry best practices.
+        </p>
+
+        <p>
+          My primary focus is designing efficient software that delivers both performance and security.
+          I believe great applications are built through thoughtful planning, maintainable code,
+          optimized databases, and user-centered design—not simply by writing code.
+        </p>
+
+        <p>
+          Throughout my academic journey and personal projects, I have developed full-stack web
+          applications using HTML, CSS, JavaScript, PHP, MySQL, Python, React, and modern development
+          tools. These experiences strengthened my understanding of application architecture,
+          problem-solving, and real-world software engineering.
+        </p>
+
+        <p>
+          Alongside development, I actively explore cybersecurity through ethical hacking,
+          vulnerability assessment, and secure development practices. Understanding how systems
+          can be attacked enables me to build software that is resilient, secure, and prepared
+          for real-world challenges.
+        </p>
+
+        <p>
+          I am continuously learning new technologies, expanding my technical expertise, and seeking
+          opportunities where I can contribute, grow as a software engineer, and create impactful
+          digital solutions.
+        </p>
+
+        <!-- Counters -->
+        <div class="counters-grid">
+
+          <div class="counter-item reveal">
+            <div class="counter-number">
+              <span class="counter" data-target="10">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="counter-label">Technologies</div>
+          </div>
+
+          <div class="counter-item reveal">
+            <div class="counter-number">
+              <span class="counter" data-target="15">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="counter-label">Projects</div>
+          </div>
+
+          <div class="counter-item reveal">
+            <div class="counter-number">
+              <span class="counter" data-target="500+">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="counter-label">Learning Hours</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating elements -->
+  <div class="floating-element float-circle float-3"></div>
+</section>
 
   <!-- ========== SKILLS SECTION ========== -->
   <section class="section skills-section" id="skills">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-label">My Expertise</p>
-        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-label">Technologies I work with regularly and use in real projects</p>
+        <h2 class="section-title">Skills</h2>
         <div class="section-divider"></div>
       </div>
+    </div>
 
-      <div class="skills-categories">
-        <!-- Programming -->
-        <div class="skill-category-card reveal" data-tilt>
-          <div class="skill-category-header">
-            <div class="skill-category-icon">💻</div>
-            <h3 class="skill-category-title">Programming</h3>
+    <div class="skills-carousel-container reveal">
+      <div class="skills-carousel">
+        <div class="skills-carousel-track">
+          <!-- Programming -->
+          <div class="skill-item">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
           </div>
-          <div class="skills-list">
-            <span class="skill-tag">C</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">JavaScript</span>
+          <div class="skill-item">
+            <i class="devicon-cplusplus-plain colored"></i>
+            <span>C++</span>
           </div>
-          <div class="skill-bars" style="margin-top: 1.2rem;">
-            <div class="skill-bar-item">
-              <div class="skill-bar-header">
-                <span class="skill-bar-name">Python</span>
-                <span class="skill-bar-percent">75%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="75"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header">
-                <span class="skill-bar-name">PHP / MySQL</span>
-                <span class="skill-bar-percent">80%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="80"></div>
-              </div>
-            </div>
+          <div class="skill-item">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database" style="color: #00758F;"></i>
+            <span>SQL</span>
+          </div>
+          <!-- Frontend -->
+          <div class="skill-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-react-original colored"></i>
+            <span>React</span>
+          </div>
+          <!-- Backend & DB -->
+          <div class="skill-item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-server" style="color: #0096FF;"></i>
+            <span>REST API</span>
+          </div>
+          <!-- Version Control -->
+          <div class="skill-item">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-original" style="color: #FFFFFF;"></i>
+            <span>GitHub</span>
+          </div>
+          <!-- Cybersecurity -->
+          <div class="skill-item">
+            <i class="devicon-linux-plain" style="color: #FFFFFF;"></i>
+            <span>Linux</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-dragon" style="color: #557C94;"></i>
+            <span>Kali Linux</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-bug" style="color: #EA602A;"></i>
+            <span>Burp Suite</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-network-wired" style="color: #355C8D;"></i>
+            <span>Nmap</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-wave-square" style="color: #1653B6;"></i>
+            <span>Wireshark</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cube" style="color: #88CC14;"></i>
+            <span>TryHackMe</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-box" style="color: #9FEF00;"></i>
+            <span>Hack The Box</span>
+          </div>
+          <!-- Tools -->
+          <div class="skill-item">
+            <i class="devicon-vscode-plain colored"></i>
+            <span>VS Code</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-postman-plain colored"></i>
+            <span>Postman</span>
           </div>
         </div>
 
-        <!-- Web Development -->
-        <div class="skill-category-card reveal" data-tilt>
-          <div class="skill-category-header">
-            <div class="skill-category-icon">🌐</div>
-            <h3 class="skill-category-title">Web Development</h3>
+        <div class="skills-carousel-track" aria-hidden="true">
+          <!-- Programming -->
+          <div class="skill-item">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
           </div>
-          <div class="skills-list">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Git</span>
+          <div class="skill-item">
+            <i class="devicon-cplusplus-plain colored"></i>
+            <span>C++</span>
           </div>
-          <div class="skill-bars" style="margin-top: 1.2rem;">
-            <div class="skill-bar-item">
-              <div class="skill-bar-header">
-                <span class="skill-bar-name">HTML / CSS</span>
-                <span class="skill-bar-percent">85%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="85"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header">
-                <span class="skill-bar-name">JavaScript</span>
-                <span class="skill-bar-percent">70%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="70"></div>
-              </div>
-            </div>
+          <div class="skill-item">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
           </div>
-        </div>
-
-        <!-- Cybersecurity -->
-        <div class="skill-category-card reveal" data-tilt>
-          <div class="skill-category-header">
-            <div class="skill-category-icon">🔐</div>
-            <h3 class="skill-category-title">Cybersecurity</h3>
+          <div class="skill-item">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
           </div>
-          <div class="skills-list">
-            <span class="skill-tag">Ethical Hacking</span>
-            <span class="skill-tag">Penetration Testing</span>
-            <span class="skill-tag">Web App Security</span>
-            <span class="skill-tag">OSINT</span>
-            <span class="skill-tag">Vulnerability Scanning</span>
-            <span class="skill-tag">Risk Assessment</span>
-            <span class="skill-tag">CTF Challenges</span>
-            <span class="skill-tag">SOC Basics</span>
+          <div class="skill-item">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
           </div>
-        </div>
-
-        <!-- Tools & Platforms -->
-        <div class="skill-category-card reveal" data-tilt>
-          <div class="skill-category-header">
-            <div class="skill-category-icon">🛠️</div>
-            <h3 class="skill-category-title">Tools & Platforms</h3>
+          <div class="skill-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
           </div>
-          <div class="skills-list">
-            <span class="skill-tag">Hack The Box</span>
-            <span class="skill-tag">TryHackMe</span>
-            <span class="skill-tag">PortSwigger Labs</span>
-            <span class="skill-tag">Burp Suite</span>
-            <span class="skill-tag">Nmap</span>
-            <span class="skill-tag">Wireshark</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">Linux</span>
+          <div class="skill-item">
+            <i class="fas fa-database" style="color: #00758F;"></i>
+            <span>SQL</span>
+          </div>
+          <!-- Frontend -->
+          <div class="skill-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-react-original colored"></i>
+            <span>React</span>
+          </div>
+          <!-- Backend & DB -->
+          <div class="skill-item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-server" style="color: #0096FF;"></i>
+            <span>REST API</span>
+          </div>
+          <!-- Version Control -->
+          <div class="skill-item">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-original" style="color: #FFFFFF;"></i>
+            <span>GitHub</span>
+          </div>
+          <!-- Cybersecurity -->
+          <div class="skill-item">
+            <i class="devicon-linux-plain" style="color: #FFFFFF;"></i>
+            <span>Linux</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-dragon" style="color: #557C94;"></i>
+            <span>Kali Linux</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-bug" style="color: #EA602A;"></i>
+            <span>Burp Suite</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-network-wired" style="color: #355C8D;"></i>
+            <span>Nmap</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-wave-square" style="color: #1653B6;"></i>
+            <span>Wireshark</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cube" style="color: #88CC14;"></i>
+            <span>TryHackMe</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-box" style="color: #9FEF00;"></i>
+            <span>Hack The Box</span>
+          </div>
+          <!-- Tools -->
+          <div class="skill-item">
+            <i class="devicon-vscode-plain colored"></i>
+            <span>VS Code</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-postman-plain colored"></i>
+            <span>Postman</span>
           </div>
         </div>
       </div>
