@@ -5,8 +5,8 @@
 (function () {
   'use strict';
 
-  // Check for device compatibility — only start on desktop with pointer
-  if (window.matchMedia('(max-width: 1024px)').matches) return;
+  // Check for device compatibility — disable on touch devices only
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
 
   const cursorDot = document.getElementById('cursorDot');
   const cursorOutline = document.getElementById('cursorOutline');
